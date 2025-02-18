@@ -1,0 +1,168 @@
+<!--Pablo Borderas Andrés y Gonzalo Sepúlveda Olivar-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mi Portfolio</title>
+
+    <style>
+        /* Este estilo nos permite enseñar los distintos bloques de la web de manera ordenada*/
+        .divcontainer { 
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px; 
+        margin:  auto; 
+        }
+        .center {
+            text-align: center;
+        }
+        img.circular {
+            border-radius: 20%;
+            object-fit: cover;
+            width: 100px;
+            height: auto;
+        }
+        .iconos-container {
+            display: flex;
+            justify-content: center; 
+            gap: 15px; 
+        }
+        .icono {
+            width: 40px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .icono:hover {
+            transform: scale(1.2);
+        }
+
+       
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--La web está dividida mediante divs para mejorar su apariencia-->
+
+    <div class="divcontainer"><h1>Gonzalo Sepulveda Olivar</h1></div>
+    
+    <div class="divcontainer">
+        <div>
+            <p>Soy Gonzalo Sepulveda Olivar<br> estudiante de tercer año</p>
+        </div>
+        <div>
+            <img class="circular" src="Hellcat.png" width="100" />
+        </div>
+    </div>
+
+
+    <div class="divcontainer">
+        <div class="iconos-container">
+        <a href="https://www.instagram.com/helldivers2game/?hl=en/" target="_blank">
+            <img src="ig.png" class="icono" alt="Instagram">
+        </a>
+
+        <a href="https://fresh.deno.dev/" target="_blank">
+            <img src="x.png" class="icono" alt="Twitter X">
+        </a> 
+
+        <a href="https://github.com/PB-421" target="_blank">
+            <img src="git.png" class="icono" alt="GitHub">
+        </a> 
+    </div></div>
+
+
+
+    
+    <div class="divcontainer">
+        <div>
+            <h1 class="center">Experiencia laboral</h1>
+        </div>
+    </div>
+    <div class="divcontainer">
+        <div>
+            <h2 class="center">Rocket Racing</h2>  
+        </div>
+        <div><br><br>2022-2023</div>
+    </div>
+    <div class="divcontainer">
+        <div>
+            Rocket Racing es un juego de <br> carreras desarrollado por un equipo de tres personas <br> para tecnicas de programacion avanzada
+        </div>
+    </div>
+
+    <div class="divcontainer">
+        <div>
+            <h2 class="center">Bot Cuantico</h2>
+        </div>
+        <div><br><br>2024-Actualidad</div>
+    </div>
+    <div class="divcontainer">
+        <div>
+            Un bot de recordatorios para <br>ayudarnos a no olvidarnos de fechas criticas<br> como examenes y practicas
+        </div>
+    </div>
+    <div class="divcontainer">
+        <div>
+            <h2 class="center">Web mercadona</h2>
+        </div>
+        <div><br><br>2022-Actualidad</div>
+    </div>
+    <div class="divcontainer">
+        <div>
+            Un servicio web destinado a<br> gestionar los pedidos de los clientes
+        </div>
+    </div>
+
+    <div class="divcontainer">
+        <div>
+            <h1 class="center">Formación</h1>
+        </div>
+        
+    </div>
+
+
+    <div class="divcontainer">
+        
+        <div>
+            <h2 class="center">Educación Secundaria Obligatoria</h2>
+        </div>
+    </div>
+    <div class="divcontainer">
+        <div>
+            Graduado de la ESO en el año 2020
+        </div>
+    </div>
+    <div class="divcontainer">
+        <div>
+            <h2 class="center">Bachillerato</h2>
+        </div>
+    </div>
+    <div class="divcontainer">
+        <div>
+            Graduado de bachillerato tecnologico en 2022 
+        </div>
+    </div>
+    <div class="divcontainer">
+        <div>
+        <span id="formacion"></span>
+        <button onclick="ocultarBoton()">Mostrar más</button>
+        </div>
+</div>
+<!--La función imprime el texto necesario y luego oculta el botón-->
+<script> 
+    function ocultarBoton(){
+        document.getElementById('formacion').innerHTML = '<h2>Grado Universitario </h2>Actualmente cursando ingeniería informática';
+        document.querySelector('button').style.display = 'none';
+    }
+</script>
+    
+
+</body>
+
+</html>
